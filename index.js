@@ -14,14 +14,13 @@ let votingAge = 16;
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-const drinkingAge = 21;
+let x = 1;
+let y = 2;
 
-if (drinkingAge > 20){
-  console.log("Legal")
-} else {
-  console.log("Illegal")
+if (x < y){
+  x = y
 }
-
+  console.log(x)
 
 
 
@@ -34,10 +33,12 @@ console.log(newYear);
 
 //Task d: Write a function to multiply a*b 
 
-let a = 2;
-let b = 3;
 
-console.log(a * b);
+
+const multiply = function(a,b){
+  console.log(a * b);
+  }
+multiply(4,6)
 
 
 
@@ -87,12 +88,12 @@ console.log(foodAmount(dogWeight,foodWeight))
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-var meTime = Math.floor(Math.random() * 3) + 1;
+var myHand = Math.floor(Math.random() * 3) + 1;
 
 
-if (meTime === 1) {
+if (myHand === 1) {
   console.log("Rock")
-} else if (meTime === 2) {
+} else if (myHand === 2) {
   console.log("Scissors")
 } else {
   console.log("paper")
