@@ -1,24 +1,43 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
+let votingAge = 16;
+  if (votingAge > 18) {
+    console.log(true);
+  } else {
+    console.log(false)
+  }
+
 
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
+const drinkingAge = 21;
+
+if (drinkingAge > 20){
+  console.log("Legal")
+} else {
+  console.log("Illegal")
+}
 
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
+var year = '1999';
 
-
-
+var newYear = parseInt(year);
+console.log(newYear);
 
 //Task d: Write a function to multiply a*b 
 
+let a = 2;
+let b = 3;
+
+console.log(a * b);
 
 
 
@@ -27,9 +46,12 @@
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
+let myAge = 33
+let dogYears = 7
 
-
-
+const myDogAge = function(myAge,dogYears) {
+  return myAge * dogYears;}
+console.log(myDogAge(myAge,dogYears))
 
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder 
@@ -49,7 +71,12 @@
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
+let foodWeight = 0.03;
+let dogWeight = 15;
 
+const foodAmount = function(dogWeight,foodWeight) {
+  return dogWeight * foodWeight;}
+console.log(foodAmount(dogWeight,foodWeight))
 
 
 
@@ -60,20 +87,49 @@
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
+var meTime = Math.floor(Math.random() * 3) + 1;
+
+
+if (meTime === 1) {
+  console.log("Rock")
+} else if (meTime === 2) {
+  console.log("Scissors")
+} else {
+  console.log("paper")
+}
+
+//if (random(1,4) === 1){
+  //console.log("rock");
+//} else if (random(1,4) === 2) {
+  //console.log("paper");
+//} else if (random(1,3) === 3){
+  //console.log("scissors");
+//}
+//Another method to get a random number. Can't get it to perform the if else function properly.
   
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
+const miles = 0.621;
 
 
+const getMiles = function(kilos,miles){
+  console.log(kilos * miles);
+} 
+getMiles(30,miles) 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
+const cm = 30.48;
 
+const getCm = function(feet,cm){
+  console.log(feet * cm)
+}
+
+getCm(6,cm)
 
 
 
@@ -81,8 +137,17 @@
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-  
 
+function annoyingSong() {
+let firstPart = " bottles of soda on the wall, ";
+let secondPart = " bottles of soda, take one down pass it around ";
+let lastPart = " bottles of soda on the wall"; 
+for ( let i = 99 ; i > 0 ; i-- ) {
+    // declare a var | conditional expression | increment var
+        console.log(i + firstPart + i + secondPart + i + lastPart);
+    }
+}
+  annoyingSong()
 
 
 
@@ -111,6 +176,7 @@
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
+
 
 
 
