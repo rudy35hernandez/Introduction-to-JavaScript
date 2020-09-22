@@ -160,7 +160,20 @@ for ( let i = 99 ; i > 0 ; i-- ) {
 //60s should be D 
 //and anything below 60 should be F
   
+let grade = Math.floor(Math.random() * 100) 
+console.log(grade)
 
+if (grade >= 90){
+  console.log("A")
+} else if (grade >= 80){
+  console.log("B") 
+} else if (grade >= 70) {
+  console.log("C")
+} else if (grade >= 60){
+  console.log("D")
+} else {
+  console.log("F")
+}
   
   
 
