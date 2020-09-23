@@ -183,6 +183,20 @@ if (grade >= 90){
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
+const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+
+function countVowels(sentence) {
+  let counts = 0;
+  for(let i = 0; i < sentence.length; i++) {
+    if(vowels.includes(sentence[i])) {
+      counts++;
+    }
+  }
+  return console.log(counts);
+}
+
+countVowels("Javascript can be difficult to grasp.");
+
 
 
 
